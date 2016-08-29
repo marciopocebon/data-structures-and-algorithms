@@ -1,3 +1,14 @@
-# data-structures-and-algorithms
+## Tests
+### Pre-requisites:
+- python v2.7
+- python-pip v8.1.2
 
-**Python implementations of data structures and algorithms.**
+#### install dependencies
+```shell
+pip install -r requirements-test.txt
+```
+
+### run the test suite
+```shell
+$ PYTHONPATH=$(pwd) ivoire -v spec/
+```
