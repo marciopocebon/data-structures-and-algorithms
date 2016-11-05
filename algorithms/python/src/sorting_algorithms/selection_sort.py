@@ -36,11 +36,9 @@ def selection_sort(array):
   lower_bound = 0
 
   # Running time: O(n)
-  while(lower_bound <= len(array)-1):
-    value, index = select_smallest_element(array, lower_bound)
+  for lower_bound in xrange(len(array)):
+    min_value, min_index = select_smallest_element(array, lower_bound)
 
-    swap(array, index, lower_bound)
-
-    lower_bound = lower_bound + 1
+    swap(array, min_index, lower_bound)
 
   return array
